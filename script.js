@@ -1,6 +1,3 @@
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
 var cart = document.getElementById("cartNumber");
 var array = [];
 var selection1 = document.getElementById("items1");
@@ -103,17 +100,4 @@ selection12.onclick = function () {
   
 }
 
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-
-span.onclick = function () {
-  modal.style.display = "none";
-}
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 

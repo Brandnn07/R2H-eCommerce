@@ -382,15 +382,15 @@ body, html {
   .prev, .next,.text, .country-name {font-size: 11px}
 }
 
-@media only screen and (max-width: 1100px) {
-  .hero {width: 1100px;
-height: 1300px;}
+@media only screen and (max-width: 1397px) {
+  .hero, footer {width: 0px;
+height: 0px;}
 }
 
-@media only screen and (max-width: 752px) {
+/* @media only screen and (max-width: 752px) {
   .hero {width: 1000px;
-  height: 2000px;}
-}
+  height: 2000px;} */
+/* } */
 
 @media only screen and (max-width: 1400px) {
   .button1 {margin-left: 600px;}
