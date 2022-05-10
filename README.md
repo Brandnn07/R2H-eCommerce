@@ -1,4 +1,3 @@
-# R2H-eCommerce
 # PLEASE READ !
 
 - Added functionality for the cart
