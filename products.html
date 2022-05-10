@@ -5,22 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>eCommerce Project</title>
 </head>
 
 <body>
     <nav id="navbar1">
-            <img class="crest" src="images/istockphoto-871106218-612x612.jpg" alt="B Logo" />
+        <img class="crest" src="images/istockphoto-871106218-612x612.jpg" alt="B Logo" />
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="contact.html">Contact Us</a>
         <a class="country-name inactiveLink">
             <b>Brandon's Trading</b>
         </a>
+
+        <a id="cart" href="cart.html"><i id="cartNumber" class="fa fa-shopping-cart">&nbsp; </i></a>
     </nav>
     <section class="productMain">
         <h1>Hover over to see more</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Select to add to cart</button>
+            <div class="dropdown-content">
+            <a id="items1">2021 Aston Martin DBS Superleggera Volante</a>
+            <a id="items2">2021 Lamborghini Aventador SVJ Roadster-Grigio</a>
+            <a id="items3">2022 Bentley Continental GT Speed Convertible Onyx</a>
+            <a id="items4">2021 Porsche Taycan Turbo S-White</a>
+            <a id="items5">2022 Porsche 718 Cayman GT4 Coupe Chalk</a>
+            <a id="items6">2021 Ferrari F8 Tributo Rosso Corsa</a>
+            <a id="items7">2021 Batmobile Tumbler Black</a>
+            <a id="items8">2015 Mclaren 650S Spider Volcano</a>
+            <a id="items9">2010 Audi R8 4.2 QUATTRO Heffner Twin Turbo Black</a>
+            <a id="items10">1939 Buick Sport Coupe Green</a>
+            <a id="items11">2020 Ferrari 488 Pista Coupe Alluminio Opaco</a>
+            <a id="items12">Lamborghini Huracan Coupe Grigio Lynx</a>
+            </div>
+          </div>
         <article class="grid-container">
             <div class="grid-item">
                 <div class="flip-card card">
@@ -314,7 +334,7 @@
                             </div>
                         </div>
                         <div class="flip-card-back">
-                            <h2 >Lamborghini Huracan Coupe Grigio Lynx</h2>
+                            <h2>Lamborghini Huracan Coupe Grigio Lynx</h2>
                             <p>When you’ve released a hit that’s become a cult favorite and one of your best-selling
                                 cars of all time, a follow-up is a Herculean task. This was exactly what Lamborghini
                                 faced when the time came to replace the Gallardo, which ran for ten years and still
@@ -330,20 +350,21 @@
             </div>
         </article>
     </section>
+    <script src="script.js"></script>
     <script>
-    var hideScroll = window.pageYOffset;
-    
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-        
-        if (hideScroll > window.pageYOffset) {
-          document.getElementById("navbar1").style.top = "0";
-        } else {
-          document.getElementById("navbar1").style.top = "-100px";
+        var hideScroll = window.pageYOffset;
+
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+
+            if (hideScroll > window.pageYOffset) {
+                document.getElementById("navbar1").style.top = "0";
+            } else {
+                document.getElementById("navbar1").style.top = "-100px";
+            }
+
+            hideScroll = currentScrollPos;
         }
-    
-      hideScroll = currentScrollPos;
-    }
     </script>
 </body>
 
