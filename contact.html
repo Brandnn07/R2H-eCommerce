@@ -1,11 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>eCommerce Project</title>
 </head>
 <body>
+    <nav id="navbar1">
+        <img class="crest" src="images/istockphoto-871106218-612x612.jpg" alt="B Logo" />
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact Us</a>
+    <a class="country-name inactiveLink">
+        <b>Brandon's Trading</b>
+    </a>
+</nav>
+<form id="signupForm">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Fill this out for additional info, to ask any questions and/or to sign up for our FREE subscription on the lastest news!</p>
+  
+      <label><b>First Name</b></label>
+      <input id="firstName" type="text" placeholder="Enter First Name" name="firstname" required>
+  
+      <label><b>Last Name</b></label>
+      <input id="lastName" type="text" placeholder="Enter Last Name" name="lastname" required>
+      
+      <label><b>Email</b></label>
+      <input id="email" type="text" placeholder="Enter Email" name="email" required>
+  5
+      <label><b>Password</b></label>
+      <input id="password" type="password" placeholder="Enter Password" name="psw-repeat" required>
+  
+      <label><b>Comments</b></label>
+      <input id="comments" type="text" placeholder="Optional">
+      
+      <input id="checkbox" type="checkbox">
+  <label> I would like to subscribe for weekly updates</label>
+  
+      <div>
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button id="signupbtn" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
     
+  <script src="contact.js"></script>
 </body>
 </html>
